@@ -1,10 +1,12 @@
 # Responsive Testing Report
 
+## Issue Fixed
+
+**Issue #27 – Make Recruiter Dashboard Responsive**
+
 ## Objective
 
 Audit the recruiter dashboard responsiveness across multiple screen sizes.
-
----
 
 ## Screen Sizes Tested
 
@@ -63,12 +65,23 @@ No code changes were required.
 
 ## Screenshots
 
-Screenshots were captured during testing for:
+### 320px - Overview
+![320 Overview](screenshots/320-overview.png)
 
-- 320px
-- 375px
-- 425px
-- 768px
-- 820px
-- 1024px
-- 1440px
+### 375px - Interview
+![375 Interview](screenshots/375-interview.png)
+
+### 425px - Sessions
+![425 Sessions](screenshots/425-sessions.png)
+
+### 768px - Candidates
+![768 Candidates](screenshots/768-candidates.png)
+
+### 820px - Workers
+![820 Workers](screenshots/820-workers.png)
+
+### 1024px - Analytics
+![1024 Analytics](screenshots/1024-analytics.png)
+
+### 1440px - Settings
+![1440 Settings](screenshots/1440-settings.png)
