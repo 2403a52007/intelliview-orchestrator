@@ -10,6 +10,20 @@ Responsibilities:
 
 All weights and thresholds are configurable via RISK_CONFIG, a single
 source of truth for every numeric constant in the scoring pipeline.
+
+Anti-cheat integrity_score schema (D2)
+---------------------------------------
+The externally consumed ``integrity_score`` is an integer from 0 to 100,
+where 100 means no suspicious activity was observed and 0 means the maximum
+combined penalty was observed. The signal budget is:
+
+* tab-switch: 20% (maximum 20-point penalty)
+* gaze/face: 30% (maximum 30-point penalty)
+* risk: 50% (maximum 50-point penalty)
+
+The score bands are defined in ``docs/integrity-score-schema.md`` and are
+the contract for backend responses and frontend interpretation. This section
+documents the schema only; it does not implement the fusion algorithm.
 """
 
 import logging
